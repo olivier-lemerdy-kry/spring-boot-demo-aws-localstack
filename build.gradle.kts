@@ -29,6 +29,7 @@ dependencies {
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("io.awspring.cloud:spring-cloud-aws-starter-sqs")
+    implementation("io.awspring.cloud:spring-cloud-aws-starter-s3")
 
     developmentOnly("org.springframework.boot:spring-boot-devtools")
     developmentOnly("org.springframework.boot:spring-boot-docker-compose")
@@ -37,6 +38,7 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-testcontainers")
     testImplementation("org.testcontainers:junit-jupiter")
     testImplementation("org.testcontainers:localstack")
+    testImplementation("org.awaitility:awaitility")
 }
 
 dependencyManagement {
